@@ -4,6 +4,7 @@ import Link from "next/link";
 import Nav from "./Nav";
 import { Button } from "./ui/button";
 import MobileNav from "./MobileNav";
+import Social from "./Social";
 
 const Header = () => {
   return (
@@ -12,19 +13,27 @@ const Header = () => {
         {/* logo */}
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            Carlos<span className="text-accent">.</span>
+            CD<span className="text-accent-hover">.</span>
           </h1>
         </Link>
         {/* desktop */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href="/contact">
+          {/* <Link href="/contact">
             <Button>Contacto</Button>
-          </Link>
+          </Link> */}
+        </div>
+        <div className="hidden xl:flex items-center gap-8">
+          <div className="mb-8 xl:mb-0">
+            <Social
+              containerStyles="flex gap-6"
+              iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent-hover hover:bg-accent hover:text-primary hover:transition-all duration-500"
+            />
+          </div>
         </div>
         {/* mobile */}
         <div className="xl:hidden">
-           <MobileNav/>
+          <MobileNav />
         </div>
       </div>
     </header>

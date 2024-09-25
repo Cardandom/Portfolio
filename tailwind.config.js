@@ -30,10 +30,12 @@ module.exports = {
     //#f22f08
 
       colors: {
-        primary:"#1c1c22",
+        primary:"#373739",
+        secondary: "19191a",
+        terciary: "020202",
         accent:{
-          DEFAULT:"#08ff7d",
-          hover: "#00ffde",
+          DEFAULT:"#c9b977",
+          hover: "#fefb49 ",
         }
       },
 

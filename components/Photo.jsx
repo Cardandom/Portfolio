@@ -27,8 +27,9 @@ const Photo = () => {
             priority
             quality={100}
             fill
-            alt=""
-            className="object-contain"
+            sizes="30"
+            alt="Carlos Dominguez Image"
+            className="object-contain rounded-full z-0"
           />
         </motion.div>
         {/* circle */}
@@ -43,7 +44,7 @@ const Photo = () => {
             y="50"
             width="390"
             height="390"
-            stroke="#00ffde"
+            stroke="#c9b977"
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -58,14 +59,14 @@ const Photo = () => {
               repeat: Infinity,
               repeatType: "mirror",
             }}
-            transform-origin="center center" // Asegura que la rotación ocurra alrededor del centro del rectángulo
+            transformOrigin="center center" // Asegura que la rotación ocurra alrededor del centro del rectángulo
           />
 
           <motion.circle
             cx="250"
             cy="250"
             r="240"
-            stroke="#08ff7d"
+            stroke="#fefb49 "
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"

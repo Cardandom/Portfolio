@@ -7,9 +7,44 @@
     @apply font-primary bg-primary text-white leading-loose;
   }
   .h2 {
-    @apply text-[44px] xl:text-[70px] leading-[1.1] font-semibold;
+    @apply text-[44px] xl:text-[60px] leading-[1.1] font-semibold;
   }
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+  .image {
+    /* position: relative;
+    height: 100vh; */
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+  /* .content {
+
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    /* height: 100%;
+    wight: 100%;
+  } */
+  /* .content span.img-txt {
+    background-color: #333;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1rem;
+    font-sizq: 1.5rem;
+    letter-spaing: 18px;
+  } */
+  .text-box{
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    wight: 100%;
+    text-align: center;
+    padding: 3rem 1rem;
+    text-align: justify;
+    display: flex;
+  
   }
 }
