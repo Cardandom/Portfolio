@@ -1,3 +1,7 @@
+"use client";
+
+import { HackerEffectText } from "@nekzus/react-hacker-effect";
+import { ReactTyped } from "react-typed";
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
@@ -10,18 +14,39 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-10">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <h1>
-              <span className="text-3xl text-accent">Desarrollador Web y Mobile</span>
+            <h1 className="flex">
+              <span className="text-3xl text-accent">
+                Desarrollador 
+              </span>
+                <ReactTyped
+                  strings={[
+                    'Web',
+                    'Mobile',
+                    'Full Stack',
+                  ]}
+                  typeSpeed={90}
+                  backSpeed={60}
+                  loop
+                  className="text-3xl text-accent pl-3"
+                />
+              
             </h1>
             <h2 className="h2">
-              Hola, soy <br />
-              <span className="text-accent-hover">Carlos Domínguez</span>
+              <HackerEffectText initialValue="Hola, soy">
+                <div>Hola, soy</div>
+              </HackerEffectText>
+              <HackerEffectText
+                initialValue="Carlos Domínguez"
+                targetValue="Web & Mobile Dev"
+                uppercase
+              >
+                <span className="text-accent-hover">Carlos Domínguez</span>
+              </HackerEffectText>
             </h2>
             <p className="max-w-[500px] mb-9 text-white/75">
-              Soluciones web y móviles a la medida de tu negocio.
-              Desde aplicaciones robustas hasta experiencias de usuario
-              innovadoras, te ayudo a crecer en el mundo digital. ¡Tu visión,
-              mi código!
+              Soluciones web y móviles a la medida de tu negocio. Desde
+              aplicaciones robustas hasta experiencias de usuario innovadoras,
+              te ayudo a crecer en el mundo digital. ¡Tu visión, mi código!
             </p>
             {/* btn and social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
